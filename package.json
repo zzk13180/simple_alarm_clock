@@ -1,0 +1,13 @@
+{
+  "name": "simple_alarm_clock",
+  "version": "0.0.1",
+  "private": true,
+  "keywords": [],
+  "author": "zhangzhankui <zzk13180@gmail.com> (https://zhangzhankui.com)",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cargo install tauri-cli && cargo tauri dev"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

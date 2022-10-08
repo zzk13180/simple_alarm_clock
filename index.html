@@ -10,7 +10,9 @@
   <body>
     <div id="app">simple_alarm_clock</div>
     <script>
-      window.addEventListener("DOMContentLoaded", () => {});
+      window.addEventListener("DOMContentLoaded", () => {
+        window.__TAURI__.tauri.invoke("test");
+      });
     </script>
   </body>
 </html>

@@ -1,6 +1,4 @@
 # ***simple alarm clock***
 
-- cargo tauri dev
++ pnpm dev
 
-+ TODO
-+ TODO

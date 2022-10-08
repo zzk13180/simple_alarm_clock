@@ -2466,12 +2466,13 @@ dependencies = [
 
 [[package]]
 name = "simple_alarm_clock"
-version = "0.1.0"
+version = "0.0.1"
 dependencies = [
- "core-foundation",
+ "serde",
+ "serde_json",
  "tauri",
  "tauri-build",
- "winapi",
+ "tokio",
 ]
 
 [[package]]
