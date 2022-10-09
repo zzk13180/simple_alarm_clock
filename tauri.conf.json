@@ -1,7 +1,9 @@
 {
   "build": {
-    "devPath": "index.html",
-    "distDir": "index.html",
+    "beforeDevCommand": "vite",
+    "beforeBuildCommand": "vite build",
+    "devPath": "http://127.0.0.1:5173",
+    "distDir": "./dist",
     "withGlobalTauri": true
   },
   "package": {
@@ -31,7 +33,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "simple_alarm_clock",
+      "identifier": "simpleAlarmClock",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
