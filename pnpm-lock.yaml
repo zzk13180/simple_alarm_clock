@@ -1,11 +1,11 @@
 lockfileVersion: 5.4
 
 specifiers:
-  css3clock.css: ^0.0.1
+  css3clock.css: ^0.0.2
   vite: ^3.1.6
 
 dependencies:
-  css3clock.css: 0.0.1
+  css3clock.css: 0.0.2
 
 devDependencies:
   vite: 3.1.6
@@ -30,8 +30,8 @@ packages:
     dev: true
     optional: true
 
-  /css3clock.css/0.0.1:
-    resolution: {integrity: sha512-iqOHjJcbmpGfQvltuEsNOjwdIiMtJXBGbEoEun0YBjHIbpnJDJnYjC5tyziP1hRN1fuxOOvl14wGq4nEH/sjnQ==}
+  /css3clock.css/0.0.2:
+    resolution: {integrity: sha512-nlCZ8K/qE26+dryBTqnixT1hd4QGb9Nz0n1NY/aTth7Fur1HTLdWTLgyMpyGjgA1NYMlNT1jKv0LQDtvlnGOeA==}
     dev: false
 
   /esbuild-android-64/0.15.10:

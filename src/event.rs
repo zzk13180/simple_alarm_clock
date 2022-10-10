@@ -1,4 +1,5 @@
 use tauri::{App, AppHandle, Manager, RunEvent, Wry};
+
 pub fn handle_run_events(app_handle: &AppHandle<Wry>, e: RunEvent) {
     match e {
         RunEvent::Exit => {}
@@ -24,17 +25,5 @@ pub fn handle_run_events(app_handle: &AppHandle<Wry>, e: RunEvent) {
 pub fn register_global_events(app: &App) {
     app.listen_global("event_name", |event| {
         println!("{:?}", event);
-    });
-}
-
-pub fn register_alarm_events(app: &App) {
-    let window = app.get_window("main").unwrap();
-    tauri::async_runtime::spawn(async move {
-        loop {
-            std::thread::sleep(std::time::Duration::from_secs(10));
-            window.show().unwrap();
-            window.set_focus().unwrap();
-            println!("提醒");
-        }
     });
 }

@@ -6,11 +6,12 @@
   "author": "zhangzhankui <zzk13180@gmail.com> (https://zhangzhankui.com)",
   "license": "MIT",
   "scripts": {
+    "web": "vite",
     "dev": "cargo tauri dev",
     "build": "cargo tauri build"
   },
   "dependencies": {
-    "css3clock.css": "^0.0.1"
+    "css3clock.css": "^0.0.2"
   },
   "devDependencies": {
     "vite": "^3.1.6"
