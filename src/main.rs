@@ -14,7 +14,7 @@ fn main() {
         .setup(|app| {
             app.get_window("main").and_then(|win| {
                 let pkg_info = app.package_info();
-                let window_title = format!("{} - v{}", pkg_info.name, pkg_info.version);
+                let window_title = format!("{}", pkg_info.name);
                 win.set_title(window_title.as_str()).ok()
             });
             event::register_global_events(app);

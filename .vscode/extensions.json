@@ -1,5 +1,4 @@
 {
-  // @recommended 
   "recommendations": [
     "esbenp.prettier-vscode",
     "tauri-apps.tauri-vscode",

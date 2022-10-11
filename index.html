@@ -5,9 +5,25 @@
     <link rel="icon" href="data:," />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>simple_alarm_clock</title>
-    <script type="module" crossorigin src="./main.js"></script>
+    <link rel="stylesheet" href="ui/style.css" />
+    <script type="module" crossorigin src="ui/main.js"></script>
   </head>
   <body>
+    <css-doodle use="var(--flags)"></css-doodle>
+    <css-doodle use="var(--background)" click-to-update>
+      :doodle {
+        @grid: 23 / 100%;
+      }
+      
+      transition: .2s @r(.6s);
+      border-radius: @pick(100% 0, 0 100%);
+      transform: scale(@r(.25, 1.25));
+      
+      background: hsla(
+        calc(240 - 6 * @x * @y),
+        70%, 68%, @r.8
+      );
+    </css-doodle>
     <div id="watch">
       <div class="frame-face"></div>
       <ul class="minute-marks">

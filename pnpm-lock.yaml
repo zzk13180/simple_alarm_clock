@@ -1,10 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
+  css-doodle: ^0.30.3
   css3clock.css: ^0.0.2
   vite: ^3.1.6
 
 dependencies:
+  css-doodle: 0.30.3
   css3clock.css: 0.0.2
 
 devDependencies:
@@ -29,6 +31,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /css-doodle/0.30.3:
+    resolution: {integrity: sha512-D0M6LVw7TgnmsQpQoTaOwjYwasy6nfDw8/1H0XchBNRokQvIqhIbyeVXK+q0YiVWsOhhJNAwJ1NZkb7WglVOzg==}
+    dev: false
 
   /css3clock.css/0.0.2:
     resolution: {integrity: sha512-nlCZ8K/qE26+dryBTqnixT1hd4QGb9Nz0n1NY/aTth7Fur1HTLdWTLgyMpyGjgA1NYMlNT1jKv0LQDtvlnGOeA==}

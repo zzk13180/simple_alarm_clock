@@ -11,6 +11,7 @@
     "build": "cargo tauri build"
   },
   "dependencies": {
+    "css-doodle": "^0.30.3",
     "css3clock.css": "^0.0.2"
   },
   "devDependencies": {

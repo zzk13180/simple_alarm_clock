@@ -1,8 +1,7 @@
 import 'css3clock.css'
+import 'css-doodle'
 import { Digital } from './lib'
 import { addZeros } from './util'
-
-const { invoke } = window.__TAURI__.tauri
 
 const updateWatch = () => {
   const now = new Date()
@@ -20,7 +19,7 @@ const updateWatch = () => {
       --minutes-rotate-original: ${minuteDeg}deg;
       --minutes-rotate-to: ${360 + minuteDeg}deg;
       --hours-rotate-original: ${hourDeg}deg;
-      --hours-rotate-to: ${360 + hourDeg}deg; /* 360 + hour original */
+      --hours-rotate-to: ${360 + hourDeg}deg;
     }
   `
   document.head.append(styleEl)
@@ -36,4 +35,12 @@ const updateDigital = () => {
 }
 updateDigital()
 setInterval(updateDigital, 1000)
-invoke("alarm") // test
+
+window.addEventListener('click', (e) => {
+  try {
+    document.querySelector('[click-to-update]').click()
+  } catch (_) {}
+})
+
+// const { invoke } = window.__TAURI__.tauri
+// invoke("alarm") // test
