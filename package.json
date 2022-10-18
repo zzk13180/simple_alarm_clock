@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "keywords": [],
-  "author": "zhangzhankui <zzk13180@gmail.com> (https://zhangzhankui.com)",
+  "author": "zhangzhankui <zzk13180@gmail.com>",
   "license": "MIT",
   "scripts": {
     "web": "vite",

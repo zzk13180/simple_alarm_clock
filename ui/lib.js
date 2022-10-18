@@ -10,7 +10,7 @@ class Digital {
     this.hour = null
     return new Proxy(this, {
       set: function (target, key, value, receiver) {
-        let oldValue = target[key]
+        const oldValue = target[key]
         const result = Reflect.set(target, key, value)
         if (!Object.is(value, oldValue)) receiver.trigger(key, value)
         return result
